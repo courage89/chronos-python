@@ -282,7 +282,7 @@ class ChronosJob(object):
     ]
 
 
-def connect(servers, proto="http", username=None, password=None, extra_headers=None, scheduler_api_version='v1'):
+def connect(servers, proto="http", username=None, password=None, extra_headers=None, scheduler_api_version=None):
     return ChronosClient(
         servers, proto=proto, username=username, password=password,
         extra_headers=extra_headers, scheduler_api_version=scheduler_api_version
